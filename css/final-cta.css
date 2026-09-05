@@ -1,0 +1,105 @@
+/* ==========================================================================
+   Block 12 — Finalne CTA
+   Brand-accent (bronze) background, 3 columns: CTA / Kontakt / Adres+Firma,
+   map spanning full width below.
+   ========================================================================== */
+
+.final-cta {
+  background: var(--color-ink);
+  color: var(--color-text-inverse);
+  border-bottom: 1px solid var(--color-border-dark);
+}
+
+.final-cta__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr;
+  gap: var(--space-2xl);
+}
+
+.final-cta__col-label {
+  font-size: var(--fs-micro);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--color-text-inverse-muted);
+  margin-bottom: var(--space-md);
+}
+.final-cta__col-label--spaced { margin-top: var(--space-lg); }
+
+/* ---- Column 1: CTA ---- */
+.final-cta__col--cta h2 {
+  color: var(--color-white);
+  font-size: clamp(1.7rem, 2.6vw, 2.3rem);
+}
+.final-cta__col--cta p {
+  margin-top: var(--space-sm);
+  font-size: var(--fs-lead);
+  color: var(--color-text-inverse-muted);
+  max-width: 34ch;
+}
+.final-cta__col--cta .btn { margin-top: var(--space-lg); }
+
+/* ---- Column 2: Kontakt ---- */
+.final-cta__phone-block {
+  padding-bottom: var(--space-md);
+  margin-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border-dark);
+}
+.final-cta__phone-block:last-of-type { border-bottom: none; margin-bottom: var(--space-sm); }
+
+.final-cta__phone-number {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--color-accent);
+}
+
+.final-cta__phone-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  margin-top: var(--space-2xs);
+}
+.final-cta__phone-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--fs-small);
+  font-weight: 500;
+  color: var(--color-text-inverse-muted);
+  width: fit-content;
+}
+.final-cta__phone-links a svg { width: 14px; height: 14px; fill: currentColor; flex-shrink: 0; }
+.final-cta__phone-links a:hover { color: var(--color-accent); }
+
+.final-cta__mail {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--fs-small);
+  font-weight: 500;
+  color: var(--color-text-inverse-muted);
+}
+.final-cta__mail svg { width: 17px; height: 17px; stroke: currentColor; flex-shrink: 0; display: block; }
+.final-cta__mail:hover { color: var(--color-accent); }
+
+/* ---- Column 3: Adres / Dane firmy ---- */
+.final-cta__text {
+  font-size: 1.05rem;
+  line-height: var(--lh-body);
+  color: var(--color-text-inverse);
+}
+
+/* ---- Map ---- */
+.final-cta__map {
+  margin-top: var(--space-2xl);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  height: 320px;
+  filter: grayscale(1) contrast(1.1);
+}
+.final-cta__map iframe { display: block; height: 100%; }
+
+@media (max-width: 900px) {
+  .final-cta__grid { grid-template-columns: 1fr; gap: var(--space-xl); }
+}

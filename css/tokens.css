@@ -1,0 +1,76 @@
+/* ==========================================================================
+   MEGASUFIT — Design Tokens
+   Palette from client brief: graphite black, warm bronze accent,
+   warm off-whites. Premium, minimal, architectural.
+   ========================================================================== */
+
+:root {
+  /* Brand colors */
+  --color-ink: #151513;          /* graphite / near-black */
+  --color-ink-soft: #232320;     /* lighter panel on dark sections */
+  --color-accent: #BC9669;       /* warm bronze — CTAs, lines, focus */
+  --color-accent-soft: #D8BE9B;  /* lighter bronze for hovers on dark bg */
+  --color-cream: #F6F5F3;        /* warm white — light section bg */
+  --color-paper: #F8F7F5;        /* light grey-white — cards on cream */
+  --color-white: #FFFFFF;
+
+  --color-text: #1B1B19;         /* body text on light */
+  --color-text-muted: #6B6862;   /* secondary text on light */
+  --color-text-inverse: #F6F5F3; /* body text on dark */
+  --color-text-inverse-muted: #B9B6AE;
+
+  --color-border: #E4E1DA;       /* hairline border on light */
+  --color-border-dark: #34332F;  /* hairline border on dark */
+
+  --color-success: #6B8F71;
+
+  /* Typography */
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --fs-h1: clamp(2.4rem, 5.2vw, 4.6rem);
+  --fs-h2: clamp(1.9rem, 3.4vw, 3rem);
+  --fs-h3: clamp(1.3rem, 1.8vw, 1.7rem);
+  --fs-lead: clamp(1.05rem, 1.4vw, 1.25rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-micro: 0.75rem;
+
+  --lh-tight: 1.08;
+  --lh-heading: 1.2;
+  --lh-body: 1.6;
+
+  /* Spacing scale */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 9rem;
+
+  /* Layout */
+  --container-max: 1240px;
+  --container-pad: clamp(1.25rem, 4vw, 3rem);
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 180ms;
+  --dur-med: 380ms;
+  --dur-slow: 640ms;
+
+  /* Elevation (used sparingly, on interactive surfaces only) */
+  --shadow-card: 0 1px 2px rgba(21, 21, 19, 0.06), 0 8px 24px rgba(21, 21, 19, 0.06);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur-med: 0ms;
+    --dur-slow: 0ms;
+  }
+}

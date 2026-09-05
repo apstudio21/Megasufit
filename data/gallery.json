@@ -1,0 +1,124 @@
+{
+  "items": [
+    {
+      "media": [
+        {
+          "file": "images/gallery/1_1.jpg"
+        },
+        {
+          "file": "images/gallery/1_2.jpg"
+        }
+      ]
+    },
+    {
+      "media": [
+        {
+          "file": "images/gallery/2_1.jpg"
+        },
+        {
+          "file": "images/gallery/2_2.jpg"
+        }
+      ]
+    },
+    {
+      "media": [
+        {
+          "file": "images/gallery/3_1.jpg"
+        },
+        {
+          "file": "images/gallery/3_2.jpg"
+        }
+      ]
+    },
+    {
+      "media": [
+        {
+          "file": "images/gallery/4_1.jpg"
+        },
+        {
+          "file": "images/gallery/4_2.jpg"
+        },
+        {
+          "file": "images/gallery/4_3.jpg"
+        },
+        {
+          "file": "images/gallery/4_4.jpg"
+        }
+      ]
+    },
+    {
+      "media": [
+        {
+          "file": "images/gallery/5_1.mp4",
+          "poster": "images/gallery/5_1-poster.jpg"
+        }
+      ]
+    },
+    {
+      "media": [
+        {
+          "file": "images/gallery/6_1.jpg"
+        }
+      ]
+    },
+    {
+      "media": [
+        {
+          "file": "images/gallery/7_1.jpg"
+        },
+        {
+          "file": "images/gallery/7_2.jpg"
+        }
+      ]
+    },
+    {
+      "media": [
+        {
+          "file": "images/gallery/8_1.jpg"
+        },
+        {
+          "file": "images/gallery/8_2.jpg"
+        }
+      ]
+    },
+    {
+      "media": [
+        {
+          "file": "images/gallery/9_1.jpg"
+        }
+      ]
+    },
+    {
+      "media": [
+        {
+          "file": "images/gallery/10_1.jpg"
+        }
+      ]
+    },
+    {
+      "media": [
+        {
+          "file": "images/gallery/11_1.jpg"
+        }
+      ]
+    },
+    {
+      "media": [
+        {
+          "file": "images/gallery/12_1.mp4",
+          "poster": "images/gallery/12_1-poster.jpg"
+        }
+      ]
+    },
+    {
+      "media": [
+        {
+          "file": "images/gallery/13_1.jpg"
+        },
+        {
+          "file": "images/gallery/13_2.jpg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "ceiling_types": [
+    { "name_pl": "Matowe", "name_ua": "Матові", "desc_pl": "Bez odblasków, uniwersalny wybór", "desc_ua": "Без відблисків, універсальний вибір", "price_from": 139, "image": "images/ceilings/matowe.jpg" },
+    { "name_pl": "Błyszczące (lustrzane)", "name_ua": "Глянцеві", "desc_pl": "Optycznie powiększają przestrzeń", "desc_ua": "Візуально збільшують простір", "price_from": 139, "image": "images/ceilings/blyszczace.jpg" },
+    { "name_pl": "Satynowe", "name_ua": "Сатинові", "desc_pl": "Lekki połysk, delikatna elegancja", "desc_ua": "Легкий блиск, м'яка елегантність", "price_from": 139, "image": "images/ceilings/satynowe.jpg" },
+    { "name_pl": "Półprzezroczyste", "name_ua": "Напівпрозорі", "desc_pl": "Pod podświetlenie LED, nowoczesny efekt", "desc_ua": "Для LED-підсвітки, сучасний ефект", "price_from": 169, "image": "images/ceilings/polprzezroczyste.jpg" },
+    { "name_pl": "Perłowe", "name_ua": "Перлові", "desc_pl": "Efekt perłowej poświaty", "desc_ua": "Перламутрове світіння", "price_from": 169, "image": "images/ceilings/perlowe.jpg" },
+    { "name_pl": "Z nadrukiem", "name_ua": "З фотодруком", "desc_pl": "Dowolny obraz, pełna personalizacja", "desc_ua": "Будь-яке зображення, персоналізація", "price_from": 259, "image": "images/ceilings/z-nadrukiem.jpg" },
+    { "name_pl": "Perforowane (Apply)", "name_ua": "Перфоровані", "desc_pl": "Artystyczna perforacja, wentylacja", "desc_ua": "Художня перфорація, вентиляція", "price_from": 269, "image": "images/ceilings/perforowane.jpg" },
+    { "name_pl": "Gwieździste niebo", "name_ua": "Зоряне небо", "desc_pl": "Realistyczny efekt gwiazd", "desc_ua": "Реалістичний ефект зірок", "price_from": 449, "image": "images/ceilings/gwiezdziste-niebo.jpg" },
+    { "name_pl": "Double Vision", "name_ua": "Double Vision", "desc_pl": "Dwa obrazy zależnie od światła", "desc_ua": "Два зображення залежно від світла", "price_from": 449, "image": "images/ceilings/double-vision-poster.jpg", "video": "images/ceilings/double-vision.mp4" }
+  ],
+  "calculator": {
+    "price_per_spot": 15,
+    "price_per_led_strip_m": 25,
+    "price_per_track_m": 35,
+    "range_multiplier": 1.15
+  }
+}

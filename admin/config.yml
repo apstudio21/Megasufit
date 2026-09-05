@@ -1,0 +1,146 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: "pl"
+
+collections:
+
+  # ------------------------------------------------------------------
+  # 1. PRICING — ceiling types shown across the site + calculator's
+  #    internal per-unit prices (lighting). Single editable file.
+  # ------------------------------------------------------------------
+  - name: "pricing"
+    label: "Cennik"
+    files:
+      - name: "pricing"
+        label: "Cennik i kalkulator"
+        file: "data/pricing.json"
+        fields:
+          - label: "Rodzaje sufitów (cennik na stronie)"
+            name: "ceiling_types"
+            widget: "list"
+            summary: "{{fields.name_pl}} — {{fields.price_from}} zł/m²"
+            fields:
+              - { label: "Nazwa (PL)", name: "name_pl", widget: "string" }
+              - { label: "Nazwa (UA)", name: "name_ua", widget: "string" }
+              - { label: "Krótki opis (PL)", name: "desc_pl", widget: "string" }
+              - { label: "Krótki opis (UA)", name: "desc_ua", widget: "string" }
+              - { label: "Cena od (zł/m²)", name: "price_from", widget: "number", value_type: "float" }
+              - { label: "Zdjęcie", name: "image", widget: "image", required: false }
+              - { label: "Wideo (opcjonalnie, zastępuje zdjęcie na karcie)", name: "video", widget: "file", required: false }
+
+          - label: "Kalkulator — ceny wewnętrzne (do wzoru wyceny)"
+            name: "calculator"
+            widget: "object"
+            fields:
+              - { label: "Punkt świetlny (lampa) — cena za szt.", name: "price_per_spot", widget: "number", value_type: "float", default: 15 }
+              - { label: "Taśma LED — cena za mb.", name: "price_per_led_strip_m", widget: "number", value_type: "float", default: 25 }
+              - { label: "Linia torowa — cena za mb.", name: "price_per_track_m", widget: "number", value_type: "float", default: 35 }
+              - { label: "Mnożnik marginesu (np. 1.15 = +15% na widełki od-do)", name: "range_multiplier", widget: "number", value_type: "float", default: 1.15 }
+
+  # ------------------------------------------------------------------
+  # 2. REALIZACJE (CASE STUDIES) — client can add/edit/delete/reorder
+  #    freely from one screen (drag to reorder = display order).
+  # ------------------------------------------------------------------
+  - name: "cases"
+    label: "Realizacje (kejsy)"
+    files:
+      - name: "cases"
+        label: "Lista realizacji"
+        file: "data/cases.json"
+        fields:
+          - label: "Realizacje"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Nazwa realizacji (wewnętrzna, do rozpoznania w liście)", name: "title", widget: "string" }
+              - label: "Zdjęcia / wideo (karuzela)"
+                name: "media"
+                widget: "list"
+                summary: "{{fields.file}}"
+                fields:
+                  - { label: "Plik", name: "file", widget: "file" }
+                  - { label: "Miniatura wideo (tylko dla plików wideo)", name: "poster", widget: "image", required: false }
+              - label: "Tagi (opcjonalnie — pokazywane tylko jeśli wypełnione)"
+                name: "tags"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "Adres / lokalizacja", name: "location", widget: "string", required: false }
+                  - { label: "Metraż", name: "area", widget: "string", required: false }
+                  - { label: "Rodzaj sufitu", name: "ceiling_type", widget: "string", required: false }
+              - { label: "Opis (PL)", name: "text_pl", widget: "text" }
+              - { label: "Opis (UA)", name: "text_ua", widget: "text", required: false }
+
+  # ------------------------------------------------------------------
+  # 3. OPINIE (TESTIMONIALS)
+  # ------------------------------------------------------------------
+  - name: "testimonials"
+    label: "Opinie"
+    files:
+      - name: "testimonials"
+        label: "Lista opinii"
+        file: "data/testimonials.json"
+        fields:
+          - label: "Opinie"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.author}} — {{fields.rating}}★"
+            fields:
+              - { label: "Imię i nazwisko", name: "author", widget: "string" }
+              - { label: "Ocena (1-5)", name: "rating", widget: "number", min: 1, max: 5, default: 5 }
+              - { label: "Data / okres (np. \"2 lata temu\")", name: "date_label", widget: "string", required: false }
+              - { label: "Dodatkowe info profilu (np. \"Lokalny ekspert, 33 opinie\")", name: "profile_meta", widget: "string", required: false }
+              - { label: "Zdjęcie profilowe", name: "avatar", widget: "image", required: false }
+              - { label: "Treść opinii (PL — oryginał)", name: "text_pl", widget: "text" }
+              - { label: "Treść opinii (UA — tłumaczenie)", name: "text_ua", widget: "text", required: false }
+              - { label: "Pokaż od razu (nie chować za \"Pokaż więcej\")", name: "featured", widget: "boolean", default: false }
+
+  # ------------------------------------------------------------------
+  # 4. FAQ
+  # ------------------------------------------------------------------
+  - name: "faq"
+    label: "FAQ"
+    files:
+      - name: "faq"
+        label: "Lista pytań"
+        file: "data/faq.json"
+        fields:
+          - label: "Pytania"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.question_pl}}"
+            fields:
+              - { label: "Pytanie (PL)", name: "question_pl", widget: "string" }
+              - { label: "Pytanie (UA)", name: "question_ua", widget: "string", required: false }
+              - { label: "Odpowiedź (PL)", name: "answer_pl", widget: "text" }
+              - { label: "Odpowiedź (UA)", name: "answer_ua", widget: "text", required: false }
+
+  # ------------------------------------------------------------------
+  # 5. GALERIA — freely add/delete cards, 1 photo, several photos
+  #    (auto-tagged as a series) or a video.
+  # ------------------------------------------------------------------
+  - name: "gallery"
+    label: "Galeria (Więcej realizacji)"
+    files:
+      - name: "gallery"
+        label: "Karty galerii"
+        file: "data/gallery.json"
+        fields:
+          - label: "Karty"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.media}}"
+            fields:
+              - label: "Zdjęcia / wideo w tej karcie"
+                name: "media"
+                widget: "list"
+                summary: "{{fields.file}}"
+                fields:
+                  - { label: "Plik", name: "file", widget: "file" }
+                  - { label: "Miniatura wideo (tylko dla plików wideo)", name: "poster", widget: "image", required: false }

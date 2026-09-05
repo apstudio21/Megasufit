@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Block 5 — Dlaczego my (porównanie: tanie rozwiązanie vs wybierając nas)
+   ========================================================================== */
+
+.compare {
+  background: var(--color-ink);
+  color: var(--color-text-inverse);
+}
+
+.compare .section-head p { color: var(--color-text-inverse-muted); }
+
+.compare__grid {
+  border: 1px solid var(--color-border-dark);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.compare__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--color-border-dark);
+}
+.compare__row:first-child { border-top: none; }
+
+.compare__cell {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-lg);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity var(--dur-med) var(--ease-out), transform var(--dur-med) var(--ease-out);
+}
+.compare__grid.is-visible .compare__cell { opacity: 1; transform: translateY(0); }
+
+.compare__cell--bad { background: rgba(246,245,243,0.02); }
+.compare__cell--good { background: rgba(188,150,105,0.08); }
+
+.compare__cell svg { flex-shrink: 0; width: 22px; height: 22px; margin-top: 2px; }
+.compare__cell--bad svg { stroke: #8a7d6f; }
+.compare__cell--good svg { stroke: var(--color-accent); }
+
+.compare__cell p { font-size: var(--fs-small); line-height: var(--lh-body); }
+.compare__cell--bad p { color: var(--color-text-inverse-muted); }
+.compare__cell--good p { color: var(--color-text-inverse); font-weight: 500; }
+
+/* staggered pop-in per row, driven by the shared .is-visible trigger */
+.compare__grid.is-visible .compare__row:nth-child(1) .compare__cell { transition-delay: 0ms; }
+.compare__grid.is-visible .compare__row:nth-child(2) .compare__cell { transition-delay: 90ms; }
+.compare__grid.is-visible .compare__row:nth-child(3) .compare__cell { transition-delay: 180ms; }
+.compare__grid.is-visible .compare__row:nth-child(4) .compare__cell { transition-delay: 270ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .compare__cell { opacity: 1; transform: none; transition: none; }
+}
+
+@media (max-width: 720px) {
+  .compare__row { grid-template-columns: 1fr; }
+  .compare__cell--good { border-top: 1px solid var(--color-border-dark); }
+}

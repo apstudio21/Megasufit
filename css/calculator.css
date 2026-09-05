@@ -1,0 +1,156 @@
+/* ==========================================================================
+   Block 6 — Kalkulator
+   ========================================================================== */
+
+.calculator {
+  background: var(--color-paper);
+  border-top: 1px solid var(--color-border);
+}
+
+.calculator__layout {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.calculator__form {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+}
+
+.calc-field {
+  margin-bottom: var(--space-md);
+}
+.calc-field label {
+  display: block;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--color-ink);
+  margin-bottom: var(--space-2xs);
+}
+.calc-field input[type="number"],
+.calc-field select {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  background: var(--color-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-body);
+  color: var(--color-text);
+  transition: border-color var(--dur-fast) var(--ease-out);
+}
+.calc-field input[type="number"]:focus,
+.calc-field select:focus { border-color: var(--color-accent); }
+
+.calc-field select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 2.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23151513' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+  background-size: 16px;
+}
+
+.calc-fieldset {
+  border: none;
+  padding: 0;
+  margin: var(--space-lg) 0 0;
+}
+.calc-fieldset legend {
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--color-ink);
+  margin-bottom: var(--space-sm);
+  padding: 0;
+}
+
+.calc-light-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) 0;
+  border-top: 1px solid var(--color-border);
+}
+.calc-light-row:first-of-type { border-top: none; }
+
+.calc-light-row .calc-checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  flex: 1;
+  font-size: var(--fs-small);
+  color: var(--color-text);
+  cursor: pointer;
+}
+.calc-light-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-accent);
+}
+
+.calc-light-row .calc-qty {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+}
+.calc-light-row .calc-qty input {
+  width: 72px;
+  padding: 0.5rem 0.6rem;
+  background: var(--color-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  transition: opacity var(--dur-fast) var(--ease-out);
+}
+.calc-light-row .calc-qty span {
+  font-size: var(--fs-micro);
+  color: var(--color-text-muted);
+}
+.calc-light-row .calc-qty input:disabled { opacity: 0.4; }
+
+/* Result panel */
+.calculator__result {
+  position: sticky;
+  top: 96px;
+  background: var(--color-ink);
+  color: var(--color-text-inverse);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+}
+
+.calculator__result-label {
+  font-size: var(--fs-micro);
+  letter-spacing: 0.04em;
+  color: var(--color-text-inverse-muted);
+}
+
+.calculator__result-value {
+  margin-top: var(--space-2xs);
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  color: var(--color-white);
+  transition: opacity var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out);
+}
+.calculator__result-value span { color: var(--color-accent); }
+.calculator__result-value.is-updated { opacity: 0.55; transform: translateY(2px); }
+
+.calculator__result-note {
+  margin-top: var(--space-sm);
+  font-size: var(--fs-small);
+  color: var(--color-text-inverse-muted);
+  line-height: var(--lh-body);
+}
+
+.calculator__result .btn {
+  width: 100%;
+  margin-top: var(--space-lg);
+}
+
+@media (max-width: 900px) {
+  .calculator__layout { grid-template-columns: 1fr; }
+  .calculator__result { position: static; }
+}

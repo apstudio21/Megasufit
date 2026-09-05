@@ -1,0 +1,119 @@
+{
+  "items": [
+    {
+      "title": "Czerń czy biel — mat",
+      "media": [
+        {
+          "file": "images/cases/case1-1.jpg"
+        },
+        {
+          "file": "images/cases/case1-2.jpg"
+        },
+        {
+          "file": "images/cases/case1-3.jpg"
+        },
+        {
+          "file": "images/cases/case1-4.jpg"
+        }
+      ],
+      "tags": {
+        "location": "",
+        "area": "",
+        "ceiling_type": "Matowy czarny / Matowy biały"
+      },
+      "text_pl": "Czerń czy biel? Mat, który robi wrażenie. Sufit to nie tylko element wykończenia, ale główny akcent wnętrza. Czarny mat dodaje głębi i charakteru, biały mat rozświetla przestrzeń klasyczną elegancją, a wtopione linie LED tworzą nowoczesny efekt oświetlenia. Szybki montaż, brak pęknięć, efekt „wow” gwarantowany.",
+      "text_ua": "Чорний чи білий? Мат, який вражає. Стеля — не просто оздоблення, а головний акцент інтер'єру. Чорний мат додає глибини й характеру, білий мат наповнює простір класичною елегантністю, а вбудовані LED-лінії створюють сучасний світловий ефект. Швидкий монтаж, без тріщин, ефект «вау» гарантовано."
+    },
+    {
+      "title": "Realizacja Piecowice",
+      "media": [
+        {
+          "file": "images/cases/case2-1.jpg"
+        },
+        {
+          "file": "images/cases/case2-2.jpg"
+        },
+        {
+          "file": "images/cases/case2-3.jpg"
+        },
+        {
+          "file": "images/cases/case2-4.jpg"
+        }
+      ],
+      "tags": {
+        "location": "Piecowice",
+        "area": "",
+        "ceiling_type": "Połysk biały"
+      },
+      "text_pl": "Realizacja w Piecowicach. Wykonaliśmy sufity napinane w białym połysku, starannie wkomponowane we wnęki z płyt GK. Zastosowaliśmy obwodowe oświetlenie LED ukryte za maskownicą — miękkie światło bez ostrych cieni, uzupełnione halogenami z naszego katalogu. Dom po remoncie, 20-letnia nieruchomość, dziś świeci nowym blaskiem.",
+      "text_ua": "Реалізація в Пецовіце. Виконали натяжні глянцеві білі стелі, акуратно вписані в ніші з гіпсокартону. Застосували обвідне LED-освітлення, приховане за маскувальним профілем — м'яке світло без різких тіней, доповнене галогенними світильниками з нашого каталогу. Будинок після ремонту віком 20 років сьогодні сяє новим блиском."
+    },
+    {
+      "title": "Magnetyczne systemy szynowe",
+      "media": [
+        {
+          "file": "images/cases/case3-1.jpg"
+        },
+        {
+          "file": "images/cases/case3-2.jpg"
+        },
+        {
+          "file": "images/cases/case3-3.jpg"
+        },
+        {
+          "file": "images/cases/case3-4.jpg"
+        },
+        {
+          "file": "images/cases/case3-5.jpg"
+        },
+        {
+          "file": "images/cases/case3-6.jpg"
+        }
+      ],
+      "tags": {
+        "location": "",
+        "area": "",
+        "ceiling_type": "System szynowy magnetyczny"
+      },
+      "text_pl": "Magnetyczne systemy szynowe — nowoczesne rozwiązanie oświetleniowe, w którym źródła światła mocowane są magnetycznie, co znacznie ułatwia montaż i użytkowanie. Pozwalają zorganizować zarówno oświetlenie ogólne, jak i punktowe, a na jednym szynoprzewodzie można umieścić kilka rodzajów lamp jednocześnie — tworząc oryginalne kompozycje świetlne dopasowane do charakteru wnętrza.",
+      "text_ua": "Магнітні трекові системи — сучасне рішення для освітлення, де світильники кріпляться магнітно, що значно спрощує монтаж і використання. Дозволяють організувати як загальне, так і точкове освітлення, а на одній треку можна розмістити кілька типів світильників одночасно — створюючи оригінальні світлові композиції під характер інтер'єру."
+    },
+    {
+      "title": "Trekowy system magnetyczny",
+      "media": [
+        {
+          "file": "images/cases/case4-1.jpg"
+        },
+        {
+          "file": "images/cases/case4-2.jpg"
+        },
+        {
+          "file": "images/cases/case4-3.jpg"
+        },
+        {
+          "file": "images/cases/case4-4.mp4",
+          "poster": "images/cases/case4-4-poster.jpg"
+        },
+        {
+          "file": "images/cases/case4-5.mp4",
+          "poster": "images/cases/case4-5-poster.jpg"
+        },
+        {
+          "file": "images/cases/case4-6.mp4",
+          "poster": "images/cases/case4-6-poster.jpg"
+        },
+        {
+          "file": "images/cases/case4-7.mp4",
+          "poster": "images/cases/case4-7-poster.jpg"
+        }
+      ],
+      "tags": {
+        "location": "",
+        "area": "",
+        "ceiling_type": "System trekowy magnetyczny"
+      },
+      "text_pl": "Trekowy system magnetyczny oświetlenia — stylowe rozwiązanie idealne do wnętrz loftowych, minimalistycznych i nowoczesnych. Lampy można swobodnie przesuwać i łączyć różne źródła światła — panele LED oraz wystające spoty. System układa się w dowolnych kształtach: linie proste, kwadraty, litery L lub U, świetnie komponując się z paskami LED na suficie napinanym.",
+      "text_ua": "Магнітна трекова система освітлення — стильне рішення, ідеальне для лофтових, мінімалістичних і сучасних інтер'єрів. Світильники можна вільно пересувати й комбінувати різні джерела світла — LED-панелі та виступаючі споти. Систему можна вибудувати в будь-якій формі: прямі лінії, квадрати, літери L чи U, чудово поєднуючи з LED-стрічками на натяжній стелі."
+    }
+  ]
+}

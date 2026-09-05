@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Shared lead modal
+   ========================================================================== */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  background: rgba(21, 21, 19, 0.55);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--dur-fast) var(--ease-out), visibility var(--dur-fast) var(--ease-out);
+}
+.modal.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__panel {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  background: var(--color-cream);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  transform: translateY(10px);
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+.modal.is-open .modal__panel { transform: translateY(0); }
+
+.modal__close {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  width: 36px;
+  height: 36px;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--color-text-muted);
+}
+.modal__close:hover { color: var(--color-ink); }
+
+.modal__panel h3 {
+  font-size: var(--fs-h3);
+  padding-right: var(--space-lg);
+}
+
+.modal__subtitle {
+  margin-top: var(--space-2xs);
+  color: var(--color-text-muted);
+  font-size: var(--fs-small);
+}
+
+.modal__panel form { margin-top: var(--space-md); }
+
+.field {
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+.field span {
+  display: block;
+  font-size: var(--fs-micro);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3xs);
+}
+.field input {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--dur-fast) var(--ease-out);
+}
+.field input:focus { border-color: var(--color-accent); }
+
+.modal__submit { width: 100%; margin-top: var(--space-2xs); }
+
+.modal__status {
+  margin-top: var(--space-sm);
+  font-size: var(--fs-small);
+  color: var(--color-success);
+  font-weight: 600;
+}

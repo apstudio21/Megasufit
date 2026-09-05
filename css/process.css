@@ -1,0 +1,117 @@
+/* ==========================================================================
+   Block 8 — Proces współpracy
+   ========================================================================== */
+
+.process {
+  background: var(--color-paper);
+  border-top: 1px solid var(--color-border);
+}
+
+.process__steps {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--space-md);
+}
+
+.process__steps::before {
+  display: none;
+}
+
+.process__line {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-border);
+  z-index: 0;
+}
+
+.process__step {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity var(--dur-med) var(--ease-out), transform var(--dur-med) var(--ease-out);
+}
+.process__steps.is-visible .process__step { opacity: 1; transform: translateY(0); }
+.process__steps.is-visible .process__step:nth-child(2) { transition-delay: 0ms; }
+.process__steps.is-visible .process__step:nth-child(3) { transition-delay: 80ms; }
+.process__steps.is-visible .process__step:nth-child(4) { transition-delay: 160ms; }
+.process__steps.is-visible .process__step:nth-child(5) { transition-delay: 240ms; }
+.process__steps.is-visible .process__step:nth-child(6) { transition-delay: 320ms; }
+.process__steps.is-visible .process__step:nth-child(7) { transition-delay: 400ms; }
+
+.process__num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-cream);
+  border: 1px solid var(--color-border);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+}
+
+.process__step h3 {
+  font-size: 1.05rem;
+  color: var(--color-ink);
+  margin-bottom: var(--space-2xs);
+}
+
+.process__step p {
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+  line-height: var(--lh-body);
+}
+
+.process__cta {
+  margin-top: var(--space-xl);
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .process__step { opacity: 1; transform: none; transition: none; }
+}
+
+@media (max-width: 900px) {
+  .process__steps { grid-template-columns: repeat(3, 1fr); row-gap: var(--space-lg); }
+  .process__line { display: none; }
+}
+
+@media (max-width: 560px) {
+  .process__steps {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+  .process__steps::before {
+    display: block;
+    top: 22px;
+    bottom: 22px;
+    left: 22px;
+    right: auto;
+    width: 1px;
+    height: auto;
+  }
+  .process__step {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    column-gap: var(--space-sm);
+    align-items: start;
+    padding-bottom: var(--space-lg);
+  }
+  .process__step:last-child { padding-bottom: 0; }
+  .process__num {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    margin-bottom: 0;
+    background: var(--color-paper);
+  }
+  .process__step h3 { grid-column: 2; grid-row: 1; margin-bottom: var(--space-3xs); }
+  .process__step p { grid-column: 2; grid-row: 2; }
+}

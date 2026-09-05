@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Block 3 — Zaufanie / liczby / zalety
+   ========================================================================== */
+
+.trust {
+  background: var(--color-cream);
+}
+
+.trust__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.trust__stat {
+  padding: var(--space-md) var(--space-lg);
+  border-left: 1px solid var(--color-border);
+}
+.trust__stat:first-child { border-left: none; padding-left: 0; }
+
+.trust__stat-num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 4.4vw, 4rem);
+  line-height: 1;
+  color: var(--color-ink);
+}
+.trust__stat-num span { color: var(--color-accent); }
+
+.trust__stat-label {
+  display: block;
+  margin-top: var(--space-xs);
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+}
+
+.trust__divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: var(--space-xl) 0;
+}
+
+.trust__features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+}
+
+.trust__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+
+.trust__feature svg {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  stroke: var(--color-accent);
+  margin-top: 2px;
+}
+
+.trust__feature p {
+  font-size: var(--fs-small);
+  line-height: var(--lh-body);
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .trust__stats { grid-template-columns: 1fr; gap: var(--space-md); }
+  .trust__stat { border-left: none; padding-left: 0; border-top: 1px solid var(--color-border); padding-top: var(--space-md); }
+  .trust__stat:first-child { border-top: none; padding-top: 0; }
+
+  .trust__features { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 520px) {
+  .trust__features { grid-template-columns: 1fr; }
+  .trust__feature { align-items: center; }
+  .trust__feature svg { margin-top: 0; }
+}

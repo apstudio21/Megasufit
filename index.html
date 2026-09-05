@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Megasufit — Sufity napinane Wrocław | Idealnie równy sufit w Twoim domu</title>
+<meta name="description" content="Sufity napinane pod klucz we Wrocławiu i regionie dolnośląskim. Szybki montaż, zero brudu, gwarancja ponad 15 lat. Darmowy pomiar.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<!-- Block-specific stylesheets are appended here as each block is built -->
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/trust.css">
+<link rel="stylesheet" href="css/ceilings.css">
+<link rel="stylesheet" href="css/compare.css">
+<link rel="stylesheet" href="css/calculator.css">
+<link rel="stylesheet" href="css/cases.css">
+<link rel="stylesheet" href="css/process.css">
+<link rel="stylesheet" href="css/testimonials.css">
+<link rel="stylesheet" href="css/faq.css">
+<link rel="stylesheet" href="css/gallery.css">
+<link rel="stylesheet" href="css/final-cta.css">
+<link rel="stylesheet" href="css/modal.css">
+<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+<!-- ==========================================================
+     HEADER (Block 1)
+     ========================================================== -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="#" class="site-header__logo">
+      <img src="images/logo-light.svg" alt="Megasufit" width="54" height="40">
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="Nawigacja główna">
+      <ul>
+        <li><a href="#stelle">Rodzaje sufitów</a></li>
+        <li><a href="#kalkulator">Kalkulator</a></li>
+        <li><a href="#realizacje">Realizacje</a></li>
+        <li><a href="#proces">Proces</a></li>
+        <li><a href="#opinie">Opinie</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-header__actions">
+      <a href="tel:+48517882111" class="site-header__phone">+48 517 882 111</a>
+      <button type="button" class="btn btn--accent" data-open-modal data-modal-title="Zamów darmowy pomiar">
+        Zamów darmowy pomiar
+      </button>
+      <button type="button" class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Otwórz menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ==========================================================
+       2. HERO
+       ========================================================== -->
+  <section id="hero" class="hero">
+    <div class="hero__panel">
+      <div class="hero__content">
+        <span class="hero__eyebrow">Sufity napinane — Wrocław i województwo dolnośląskie</span>
+
+        <h1>Idealnie równy sufit w&nbsp;Twoim domu!</h1>
+        <p class="hero__lead">Sufity napinane pod klucz — szybki montaż, zero brudu i gwarancja jakości na lata.</p>
+
+        <form class="hero__form" name="hero-lead" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="hero-form">
+          <input type="hidden" name="form-name" value="hero-lead">
+          <p class="sr-only"><label>Nie wypełniaj: <input name="bot-field"></label></p>
+
+          <label class="field">
+            <span>Imię</span>
+            <input type="text" name="name" placeholder="Twoje imię" required autocomplete="name">
+          </label>
+          <label class="field">
+            <span>Telefon</span>
+            <input type="tel" name="phone" placeholder="Numer telefonu" required autocomplete="tel">
+          </label>
+
+          <button type="submit" class="btn btn--accent">Zamów darmowy pomiar</button>
+        </form>
+        <p class="hero__microtext"><strong>Oddzwonimy w ciągu 15 minut.</strong> Bez zobowiązań.</p>
+        <p class="hero__form-status" data-hero-form-status hidden>Dziękujemy! Skontaktujemy się wkrótce.</p>
+
+        <div class="hero__badges">
+          <div class="hero__badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Gwarancja ponad 15 lat</span>
+          </div>
+          <div class="hero__badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M13 2L3 14h7l-1 8 11-13h-7l1-7z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Szybki montaż</span>
+          </div>
+          <div class="hero__badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 10h20" stroke-linecap="round"/></svg>
+            <span>Raty / wygodna płatność</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__media">
+      <div class="hero__slide is-active">
+        <img src="images/hero/hero-bg.jpg" alt="Czarny sufit napinany z liniami LED nad klatką schodową" style="object-position: 68% 32%">
+      </div>
+      <div class="hero__slide">
+        <img src="images/hero/hero-bg-2.jpg" alt="Sufit napinany z oświetleniem punktowym w biurze" style="object-position: 55% 25%">
+      </div>
+      <div class="hero__slide">
+        <img src="images/hero/hero-bg-3.jpg" alt="Sufit napinany z dekoracyjnymi lampami wiszącymi" style="object-position: 50% 45%">
+      </div>
+    </div>
+    <div class="hero__scrim" aria-hidden="true"></div>
+  </section>
+
+  <!-- ==========================================================
+       3. ZAUFANIE / LICZBY / ZALETY
+       ========================================================== -->
+  <section id="zaufanie" class="section trust">
+    <div class="container">
+      <div class="trust__stats reveal">
+        <div class="trust__stat">
+          <span class="trust__stat-num"><span data-count="10" data-suffix="+">0</span> lat</span>
+          <span class="trust__stat-label">doświadczenia na rynku</span>
+        </div>
+        <div class="trust__stat">
+          <span class="trust__stat-num"><span data-count="1000" data-suffix="+">0</span></span>
+          <span class="trust__stat-label">zrealizowanych projektów</span>
+        </div>
+        <div class="trust__stat">
+          <span class="trust__stat-num"><span data-count="15" data-suffix="+">0</span> lat</span>
+          <span class="trust__stat-label">gwarancji na sufit i montaż</span>
+        </div>
+      </div>
+
+      <div class="trust__divider"></div>
+
+      <div class="trust__features reveal">
+        <div class="trust__feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p>Tylko wysokiej jakości materiały</p>
+        </div>
+        <div class="trust__feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M9 12l2 2 4-4M12 3l7 4v5c0 4.5-3 8-7 9-4-1-7-4.5-7-9V7l7-4z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p>Uczciwe warunki, bez ukrytych kosztów</p>
+        </div>
+        <div class="trust__feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="8" r="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p>Doświadczona i wykwalifikowana ekipa</p>
+        </div>
+        <div class="trust__feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.4 15a1.7 1.7 0 00.34 1.87l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.7 1.7 0 00-1.87-.34 1.7 1.7 0 00-1 1.55V21a2 2 0 11-4 0v-.09a1.7 1.7 0 00-1-1.55 1.7 1.7 0 00-1.87.34l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.7 1.7 0 00.34-1.87 1.7 1.7 0 00-1.55-1H3a2 2 0 110-4h.09a1.7 1.7 0 001.55-1 1.7 1.7 0 00-.34-1.87l-.06-.06a2 2 0 112.83-2.83l.06.06a1.7 1.7 0 001.87.34H9a1.7 1.7 0 001-1.55V3a2 2 0 114 0v.09a1.7 1.7 0 001 1.55 1.7 1.7 0 001.87-.34l.06-.06a2 2 0 112.83 2.83l-.06.06a1.7 1.7 0 00-.34 1.87V9a1.7 1.7 0 001.55 1H21a2 2 0 110 4h-.09a1.7 1.7 0 00-1.55 1z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p>Nowoczesny sprzęt i technologie</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       4. RODZAJE SUFITÓW
+       Content sourced from data/pricing.json (editable via CMS)
+       ========================================================== -->
+  <section id="stelle" class="section ceilings">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Oferta</span>
+        <h2>Rodzaje sufitów napinanych</h2>
+      </div>
+
+      <div class="ceilings__grid" id="ceilings-grid" aria-busy="true">
+        <!-- 9 slots filled by js/ceilings.js from data/pricing.json -->
+      </div>
+
+      <p class="ceilings__note">Cena zależy od materiałów, montażu oświetlenia i kształtu pomieszczenia. Podane ceny mają charakter orientacyjny — dokładny kosztorys przygotujemy po bezpłatnym pomiarze.</p>
+
+      <div class="ceilings__cta">
+        <button type="button" class="btn btn--accent" data-open-modal data-modal-title="Zamów darmowy pomiar" data-modal-context="rodzaje-sufitow">Zamów darmowy pomiar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       5. DLACZEGO MY
+       ========================================================== -->
+  <section id="dlaczego-my" class="section compare">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Dlaczego my</span>
+        <h2>Dlaczego niska cena może kosztować Cię więcej?</h2>
+      </div>
+
+      <div class="compare__grid" id="compare-grid">
+        <div class="compare__row">
+          <div class="compare__cell compare__cell--bad">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="9" stroke-linecap="round"/><path d="M9 9l6 6M15 9l-6 6" stroke-linecap="round"/></svg>
+            <p>Cienka, tania folia — nieprzyjemny zapach, łatwo się rozrywa</p>
+          </div>
+          <div class="compare__cell compare__cell--good">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p>Certyfikowane płótno z gwarancją ponad 15 lat</p>
+          </div>
+        </div>
+        <div class="compare__row">
+          <div class="compare__cell compare__cell--bad">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="9" stroke-linecap="round"/><path d="M9 9l6 6M15 9l-6 6" stroke-linecap="round"/></svg>
+            <p>Ukryte koszty — dopłata na końcu</p>
+          </div>
+          <div class="compare__cell compare__cell--good">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p>Pełny kosztorys bez ukrytych opłat</p>
+          </div>
+        </div>
+        <div class="compare__row">
+          <div class="compare__cell compare__cell--bad">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="9" stroke-linecap="round"/><path d="M9 9l6 6M15 9l-6 6" stroke-linecap="round"/></svg>
+            <p>Słaby profil — z czasem pęka i się odkształca</p>
+          </div>
+          <div class="compare__cell compare__cell--good">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p>Gruby profil aluminiowy</p>
+          </div>
+        </div>
+        <div class="compare__row">
+          <div class="compare__cell compare__cell--bad">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="9" stroke-linecap="round"/><path d="M9 9l6 6M15 9l-6 6" stroke-linecap="round"/></svg>
+            <p>Nieprawidłowy montaż — zwisy i „zmarszczki”</p>
+          </div>
+          <div class="compare__cell compare__cell--good">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p>Doświadczona ekipa, montaż zgodny z technologią</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       6. KALKULATOR
+       Ceiling type options + unit prices sourced from data/pricing.json
+       ========================================================== -->
+  <section id="kalkulator" class="section calculator">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Kalkulator</span>
+        <h2>Oblicz przybliżony koszt swojego sufitu</h2>
+      </div>
+
+      <div class="calculator__layout reveal">
+        <form class="calculator__form" id="calc-form">
+          <div class="calc-field">
+            <label for="calc-area">Powierzchnia pomieszczenia (m²)</label>
+            <input type="number" id="calc-area" name="area" min="1" step="0.5" placeholder="np. 18">
+          </div>
+
+          <div class="calc-field">
+            <label for="calc-type">Rodzaj sufitu</label>
+            <select id="calc-type" name="type" aria-busy="true">
+              <option value="">Wczytywanie…</option>
+            </select>
+          </div>
+
+          <fieldset class="calc-fieldset">
+            <legend>Oświetlenie</legend>
+
+            <div class="calc-light-row">
+              <label class="calc-checkbox">
+                <input type="checkbox" id="calc-spot-on" data-qty-toggle="calc-spot-qty">
+                Punkty świetlne (lampy)
+              </label>
+              <div class="calc-qty">
+                <input type="number" id="calc-spot-qty" min="0" step="1" value="0" disabled>
+                <span>szt.</span>
+              </div>
+            </div>
+
+            <div class="calc-light-row">
+              <label class="calc-checkbox">
+                <input type="checkbox" id="calc-led-on" data-qty-toggle="calc-led-qty">
+                Linia LED
+              </label>
+              <div class="calc-qty">
+                <input type="number" id="calc-led-qty" min="0" step="0.5" value="0" disabled>
+                <span>mb.</span>
+              </div>
+            </div>
+
+            <div class="calc-light-row">
+              <label class="calc-checkbox">
+                <input type="checkbox" id="calc-track-on" data-qty-toggle="calc-track-qty">
+                Linie torowe
+              </label>
+              <div class="calc-qty">
+                <input type="number" id="calc-track-qty" min="0" step="0.5" value="0" disabled>
+                <span>mb.</span>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+        <div class="calculator__result">
+          <p class="calculator__result-label">Przybliżony koszt</p>
+          <p class="calculator__result-value" id="calc-result">od <span id="calc-from">—</span> do <span id="calc-to">—</span> zł</p>
+          <p class="calculator__result-note">To wycena orientacyjna. Dokładny kosztorys przygotujemy po bezpłatnym pomiarze.</p>
+          <button type="button" class="btn btn--accent" data-open-modal data-modal-title="Zamów darmowy pomiar" data-modal-context="kalkulator">Zamów darmowy pomiar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       7. REALIZACJE (CASE STUDIES)
+       Content sourced from data/cases.json (editable via CMS)
+       ========================================================== -->
+  <section id="realizacje" class="section cases">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Realizacje</span>
+        <h2>Zobacz nasze realizacje</h2>
+      </div>
+
+      <div class="cases__list" id="cases-list" aria-busy="true"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       8. PROCES WSPÓŁPRACY
+       ========================================================== -->
+  <section id="proces" class="section process">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Proces</span>
+        <h2>Jak przebiega współpraca?</h2>
+      </div>
+
+      <div class="process__steps" id="process-steps">
+        <div class="process__line" aria-hidden="true"></div>
+        <div class="process__step">
+          <div class="process__num">01</div>
+          <h3>Kontakt</h3>
+          <p>Dzwonimy i wyznaczamy wolny termin na pomiar</p>
+        </div>
+        <div class="process__step">
+          <div class="process__num">02</div>
+          <h3>Pomiar</h3>
+          <p>Wykonujemy darmowy pomiar i kalkulujemy koszt projektu</p>
+        </div>
+        <div class="process__step">
+          <div class="process__num">03</div>
+          <h3>Umowa</h3>
+          <p>Podpisujemy umowę, w której ustalamy warunki i koszty</p>
+        </div>
+        <div class="process__step">
+          <div class="process__num">04</div>
+          <h3>Realizacja</h3>
+          <p>Montaż wykonujemy w wyznaczonym terminie</p>
+        </div>
+        <div class="process__step">
+          <div class="process__num">05</div>
+          <h3>Gwarancja</h3>
+          <p>Na wszystkie sufity oraz prace montażowe udzielamy gwarancji</p>
+        </div>
+        <div class="process__step">
+          <div class="process__num">06</div>
+          <h3>Rozliczenie</h3>
+          <p>Opłatę za zamówienie opłacasz w wygodny sposób</p>
+        </div>
+      </div>
+
+      <div class="process__cta">
+        <button type="button" class="btn btn--accent" data-open-modal data-modal-title="Zamów darmowy pomiar" data-modal-context="proces">Zamów darmowy pomiar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       9. OPINIE
+       Content sourced from data/testimonials.json (editable via CMS)
+       ========================================================== -->
+  <section id="opinie" class="section testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Opinie</span>
+        <h2>Co mówią nasi klienci?</h2>
+      </div>
+
+      <div class="testimonials__grid" id="testimonials-grid" aria-busy="true"></div>
+      <div class="testimonials__extra" id="testimonials-extra"></div>
+
+      <div class="testimonials__more-wrap">
+        <button type="button" class="btn btn--ghost-light" id="testimonials-toggle" hidden>Pokaż więcej opinii</button>
+      </div>
+
+      <div class="testimonials__footer">
+        <p>Wszystkie opinie pochodzą z naszego profilu Google.</p>
+        <a class="btn--text" href="https://maps.app.goo.gl/uRcbvxsfdCo9ooRK9" target="_blank" rel="noopener">Zobacz wszystkie opinie w Google →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       10. FAQ
+       Content sourced from data/faq.json (editable via CMS)
+       ========================================================== -->
+  <section id="faq" class="section faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Najczęstsze pytania</h2>
+      </div>
+
+      <div class="faq__layout">
+        <div class="faq__list" id="faq-list" aria-busy="true"></div>
+
+        <aside class="faq__side reveal">
+          <h3>Nie znalazłeś odpowiedzi?</h3>
+          <p>Napisz lub zadzwoń — odpowiemy na każde pytanie dotyczące sufitów napinanych i wyceny.</p>
+          <a class="faq__side-phone" href="tel:+48517882111">+48 517 882 111</a>
+          <button type="button" class="btn btn--accent" data-open-modal data-modal-title="Masz pytanie? Napisz do nas" data-modal-context="faq">Skontaktuj się z nami</button>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       11. WIĘCEJ REALIZACJI (GALERIA)
+       Content sourced from data/gallery.json (editable via CMS)
+       ========================================================== -->
+  <section id="galeria" class="section gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Galeria</span>
+        <h2>Więcej naszych realizacji</h2>
+      </div>
+
+      <div class="gallery__grid" id="gallery-grid" aria-busy="true"></div>
+
+      <div class="gallery__more-wrap">
+        <button type="button" class="btn btn--ghost-light" id="gallery-toggle" hidden>Rozwiń więcej</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       12. FINALNE CTA
+       ========================================================== -->
+  <section id="kontakt" class="section final-cta">
+    <div class="container">
+      <div class="final-cta__grid reveal">
+
+        <div class="final-cta__col final-cta__col--cta">
+          <h2>Twój dom jest tego wart</h2>
+          <p>Zostaw kontakt, aby uzyskać szybką i profesjonalną poradę od naszych fachowców!</p>
+          <button type="button" class="btn btn--accent" data-open-modal data-modal-title="Zamów darmowy pomiar" data-modal-context="final-cta">Zamów darmowy pomiar</button>
+        </div>
+
+        <div class="final-cta__col">
+          <p class="final-cta__col-label">Kontakt</p>
+
+          <div class="final-cta__phone-block">
+            <a class="final-cta__phone-number" href="tel:+48517882111">+48 517 882 111</a>
+            <div class="final-cta__phone-links">
+              <a href="https://wa.me/48517882111" target="_blank" rel="noopener"><span>Napisz na WhatsApp</span></a>
+              <a href="https://t.me/+48517882111" target="_blank" rel="noopener"><span>Napisz na Telegramie</span></a>
+            </div>
+          </div>
+
+          <div class="final-cta__phone-block">
+            <a class="final-cta__phone-number" href="tel:+48517882555">+48 517 882 555</a>
+            <div class="final-cta__phone-links">
+              <a href="https://wa.me/48517882555" target="_blank" rel="noopener"><span>Napisz na WhatsApp</span></a>
+              <a href="https://t.me/+48517882555" target="_blank" rel="noopener"><span>Napisz na Telegramie</span></a>
+            </div>
+          </div>
+
+          <a class="final-cta__mail" href="mailto:megasufit@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 6l10 7 10-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>megasufit@gmail.com</span>
+          </a>
+        </div>
+
+        <div class="final-cta__col">
+          <p class="final-cta__col-label">Adres</p>
+          <p class="final-cta__text">MKRV Group sp. z o.o.<br>ul. Pasterska 2<br>50-225 Wrocław</p>
+
+          <p class="final-cta__col-label final-cta__col-label--spaced">Dane firmy</p>
+          <p class="final-cta__text">NIP: 8992884815<br>REGON: 386914034</p>
+        </div>
+
+      </div>
+
+      <div class="final-cta__map reveal">
+        <iframe
+          src="https://www.google.com/maps?q=SUFITY+NAPINANE+MEGASUFIT,+ul.+Pasterska+2,+Wroc%C5%82aw&z=16&output=embed"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Megasufit — ul. Pasterska 2, Wrocław"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==========================================================
+     13. FOOTER (built now — shared chrome)
+     ========================================================== -->
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+
+    <div class="site-footer__brand">
+      <a href="#hero" aria-label="Przewiń na górę strony">
+        <img src="images/logo-light.svg" alt="Megasufit" width="47" height="35">
+      </a>
+      <p>Sufity napinane pod klucz. Wrocław i województwo dolnośląskie.</p>
+      <div class="site-footer__social">
+        <a href="https://www.facebook.com/SufityNapinaneMegasufit/" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+        <a href="https://www.instagram.com/sufity_napinane_megasufit/" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+        <a href="https://www.tiktok.com/@www.megasufit.com" aria-label="TikTok" target="_blank" rel="noopener">TT</a>
+      </div>
+    </div>
+
+    <nav class="site-footer__col" aria-label="Nawigacja">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li><a href="#stelle">Rodzaje sufitów</a></li>
+        <li><a href="#kalkulator">Kalkulator</a></li>
+        <li><a href="#realizacje">Realizacje</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-footer__col">
+      <h3>Kontakt</h3>
+      <ul>
+        <li><a href="tel:+48517882111">+48 517 882 111</a></li>
+        <li><a href="tel:+48517882555">+48 517 882 555</a></li>
+        <li><a href="mailto:megasufit@gmail.com">megasufit@gmail.com</a></li>
+        <li>Wrocław i województwo dolnośląskie</li>
+      </ul>
+    </div>
+
+    <div class="site-footer__col">
+      <h3>Opinie</h3>
+      <p>Zobacz opinie naszych klientów w Google.</p>
+      <a class="btn--text" href="https://maps.app.goo.gl/uRcbvxsfdCo9ooRK9" target="_blank" rel="noopener">Zobacz opinie w Google →</a>
+      <p style="margin-top: var(--space-md)">Masz pytanie?</p>
+      <button type="button" class="btn--text" data-open-modal data-modal-title="Skontaktuj się z nami" data-modal-context="footer">Skontaktuj się z nami</button>
+    </div>
+
+  </div>
+
+  <div class="container site-footer__bottom">
+    <p>© <span id="year"></span> MKRV Group. Wszelkie prawa zastrzeżone.</p>
+  </div>
+</footer>
+
+<!-- ==========================================================
+     SHARED LEAD MODAL (used by every "Zamów darmowy pomiar" CTA)
+     ========================================================== -->
+<div class="modal" id="lead-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="lead-modal-title">
+  <div class="modal__panel">
+    <button type="button" class="modal__close" data-close-modal aria-label="Zamknij">&times;</button>
+    <h3 id="lead-modal-title" data-modal-title data-default="Zamów darmowy pomiar">Zamów darmowy pomiar</h3>
+    <p class="modal__subtitle">Oddzwonimy w ciągu 15 minut.</p>
+
+    <form id="lead-form" name="lead" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="lead">
+      <input type="hidden" name="context" data-modal-context>
+      <p class="sr-only"><label>Nie wypełniaj: <input name="bot-field"></label></p>
+
+      <label class="field">
+        <span>Imię</span>
+        <input type="text" name="name" required autocomplete="name">
+      </label>
+      <label class="field">
+        <span>Telefon</span>
+        <input type="tel" name="phone" required autocomplete="tel">
+      </label>
+
+      <button type="submit" class="btn btn--accent modal__submit">Wyślij zgłoszenie</button>
+      <p class="modal__status" data-form-status hidden>Dziękujemy! Skontaktujemy się wkrótce.</p>
+    </form>
+  </div>
+</div>
+
+<!-- ==========================================================
+     GALLERY LIGHTBOX (block 11)
+     ========================================================== -->
+<div class="lightbox" id="gallery-lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="lightbox__stage">
+    <button type="button" class="lightbox__close" data-lightbox-close aria-label="Zamknij">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="lightbox__frame" id="lightbox-frame"></div>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" data-lightbox-prev aria-label="Poprzednie">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button type="button" class="lightbox__nav lightbox__nav--next" data-lightbox-next aria-label="Następne">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 18l6-6-6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="lightbox__dots" id="lightbox-dots"></div>
+  </div>
+</div>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+<script src="js/hero.js"></script>
+<script src="js/hero-slideshow.js"></script>
+<script src="js/trust.js"></script>
+<script src="js/ceilings.js"></script>
+<script src="js/compare.js"></script>
+<script src="js/calculator.js"></script>
+<script src="js/cases.js"></script>
+<script src="js/process.js"></script>
+<script src="js/testimonials.js"></script>
+<script src="js/faq.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/final-cta.js"></script>
+<!-- Block-specific scripts are appended here as each block is built -->
+</body>
+</html>

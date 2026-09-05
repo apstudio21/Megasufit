@@ -1,0 +1,104 @@
+{
+  "items": [
+    {
+      "author": "Radek Zając",
+      "rating": 5,
+      "date_label": "3 lata temu",
+      "profile_meta": "Lokalny ekspert, 33 opinie, 12 zdjęć",
+      "avatar": "images/avatars/radek.jpg",
+      "text_pl": "Korzystałem z usług firmy 3 razy. Są jakieś tam drobne niedociągnięcia, zostawiana jakaś przybrudzona ściana, czasem trzeba ekipie podpowiedzieć jakieś rozwiązanie. Ale finalnie jestem zadowolony z usług. Ceny akceptowalne.",
+      "text_ua": "Користувався послугами компанії 3 рази. Є деякі дрібні недоліки — залишається трохи забруднена стіна, часом треба підказати бригаді якесь рішення. Але в підсумку я задоволений послугами. Ціни прийнятні.",
+      "featured": true
+    },
+    {
+      "author": "Aleksandra Bezrąk",
+      "rating": 5,
+      "date_label": "9 miesięcy temu",
+      "profile_meta": "1 opinia",
+      "avatar": "images/avatars/aleksandra.jpg",
+      "text_pl": "Mega, polecam zarówno sufity, jak i tę firmę!!! Pełen profesjonalizm. Panowie bardzo dokładni, staranne wykonanie, a do tego bardzo sympatyczni! Za niedługo będzie kolejny montaż.",
+      "text_ua": "Мега, рекомендую і стелі, і цю компанію!!! Повний професіоналізм. Хлопці дуже акуратні, старанне виконання, а ще дуже приємні! Скоро буде наступний монтаж.",
+      "featured": true
+    },
+    {
+      "author": "Olga",
+      "rating": 5,
+      "date_label": "rok temu",
+      "profile_meta": "3 opinie",
+      "avatar": "images/avatars/olga.jpg",
+      "text_pl": "Zdecydowanie polecam sufity napinane! Efekt końcowy przerósł moje oczekiwania — pomieszczenie wygląda nowocześnie i elegancko. Montaż przebiegł szybko i bezproblemowo, a całość prezentuje się świetnie. Jestem bardzo zadowolona z wyboru i z czystym sumieniem mogę polecić każdemu, kto szuka efektownego wykończenia wnętrza.",
+      "text_ua": "Однозначно рекомендую натяжні стелі! Кінцевий результат перевершив мої очікування — приміщення виглядає сучасно й елегантно. Монтаж пройшов швидко й без проблем, а все виглядає чудово. Я дуже задоволена вибором і з чистою совістю можу рекомендувати кожному, хто шукає ефектне оздоблення інтер'єру.",
+      "featured": true
+    },
+    {
+      "author": "Jolea Niku",
+      "rating": 5,
+      "date_label": "rok temu",
+      "profile_meta": "2 opinie",
+      "avatar": "images/avatars/jolea.jpg",
+      "text_pl": "Otrzymany efekt przerósł moje oczekiwania! Sufit napinany prezentuje się świetnie, a jakość wykonania jest na najwyższym poziomie. Dodatkowo, komunikacja z firmą była bezproblemowa — szybkie odpowiedzi i pełen profesjonalizm. Zdecydowanie polecam.",
+      "text_ua": "Отриманий результат перевершив мої очікування! Натяжна стеля виглядає чудово, а якість виконання на найвищому рівні. Додатково, спілкування з компанією було безпроблемним — швидкі відповіді і повний професіоналізм. Однозначно рекомендую.",
+      "featured": true
+    },
+    {
+      "author": "Aneta",
+      "rating": 5,
+      "date_label": "2 lata temu",
+      "profile_meta": "Lokalny ekspert, 192 opinie, 3 zdjęcia",
+      "avatar": "images/avatars/aneta.jpg",
+      "text_pl": "Profesjonalna firma. Doradzą, wytłumaczą i zrobią. Na dodatek bardzo tanio :) Polecam.",
+      "text_ua": "Професійна компанія. Порадять, пояснять і зроблять. До того ж дуже недорого :) Рекомендую.",
+      "featured": true
+    },
+    {
+      "author": "Гена Костюк",
+      "rating": 5,
+      "date_label": "2 lata temu",
+      "profile_meta": "2 opinie, 14 zdjęć",
+      "avatar": "images/avatars/gena.jpg",
+      "text_pl": "Zamawiałem sufit w salonie i łazience. Solidna robota, ceny przystępne. Polecam firmę!",
+      "text_ua": "Замовляв стелю у вітальні та ванній. Солідна робота, доступні ціни. Рекомендую компанію!",
+      "featured": true
+    },
+    {
+      "author": "Sławomir Miastkowski",
+      "rating": 5,
+      "date_label": "rok temu",
+      "profile_meta": "Lokalny ekspert, 67 opinii, 3 zdjęcia",
+      "avatar": "images/avatars/slawomir.jpg",
+      "text_pl": "Eleganckie ładne sufity. Obsługa profesjonalna, wykonanie perfekt. Polecam firmę.",
+      "text_ua": "Елегантні гарні стелі. Обслуговування професійне, виконання ідеальне. Рекомендую компанію.",
+      "featured": false
+    },
+    {
+      "author": "Andzia A",
+      "rating": 5,
+      "date_label": "2 lata temu",
+      "profile_meta": "Lokalny ekspert, 86 opinii",
+      "avatar": "images/avatars/andzia.jpg",
+      "text_pl": "Bardzo polecam. Fachowa obsługa klienta i wykonanie. Jestem zadowolona.",
+      "text_ua": "Дуже рекомендую. Фахове обслуговування клієнтів і виконання. Я задоволена.",
+      "featured": false
+    },
+    {
+      "author": "Dorota Zielinska",
+      "rating": 5,
+      "date_label": "2 lata temu",
+      "profile_meta": "Lokalny ekspert, 22 opinie",
+      "avatar": "images/avatars/dorota.jpg",
+      "text_pl": "Profesjonalni ludzie do profesjonalnej pracy! Naprawdę warto!",
+      "text_ua": "Професійні люди для професійної роботи! Дійсно варто!",
+      "featured": false
+    },
+    {
+      "author": "Igor Żukowski",
+      "rating": 5,
+      "date_label": "2 lata temu",
+      "profile_meta": "6 opinii",
+      "avatar": "images/avatars/igor.jpg",
+      "text_pl": "Polecam, rzetelna firma, bardzo dobrze się współpracuje.",
+      "text_ua": "Рекомендую, надійна компанія, дуже добре співпрацювати.",
+      "featured": false
+    }
+  ]
+}

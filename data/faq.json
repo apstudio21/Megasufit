@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "question_pl": "Dlaczego niektóre firmy oferują tańsze sufity, a inne droższe?",
+      "question_ua": "Чому в одних компаній стелі дешевші, а в інших дорожчі?",
+      "answer_pl": "Cena zależy od jakości płótna, grubości profilu aluminiowego oraz tego, czy w wycenie ujęto wszystkie koszty montażu i akcesoriów. Tańsze oferty często pomijają część kosztów, które pojawiają się dopiero na końcu.",
+      "answer_ua": "Ціна залежить від якості полотна, товщини алюмінієвого профілю та того, чи враховані у кошторисі всі витрати на монтаж і комплектуючі. Дешевші пропозиції часто не включають частину витрат, які зʼявляються вже наприкінці."
+    },
+    {
+      "question_pl": "Jak oblicza się koszt sufitu napinanego?",
+      "question_ua": "Як розраховується вартість натяжної стелі?",
+      "answer_pl": "Cena zależy od metrażu, rodzaju sufitu, liczby punktów świetlnych oraz ewentualnej konstrukcji wielopoziomowej. Dokładny kosztorys przygotowujemy po bezpłatnym pomiarze.",
+      "answer_ua": "Ціна залежить від метражу, типу стелі, кількості світлових точок та можливої багаторівневої конструкції. Точний кошторис готуємо після безкоштовного заміру."
+    },
+    {
+      "question_pl": "Czy muszę przygotować stary sufit przed montażem?",
+      "question_ua": "Чи потрібно готувати старий стелю перед монтажем?",
+      "answer_pl": "Nie, sufit napinany montuje się bezpośrednio pod istniejącym sufitem — nie trzeba go skuwać, szpachlować ani malować.",
+      "answer_ua": "Ні, натяжна стеля монтується прямо під наявною стелею — не потрібно її збивати, шпаклювати чи фарбувати."
+    },
+    {
+      "question_pl": "Czy sufit napinany chroni przed zalaniem przez sąsiadów z góry?",
+      "question_ua": "Чи захищає натяжна стеля від затоплення сусідами зверху?",
+      "answer_pl": "Tak, sufit napinany zatrzymuje wodę i chroni wnętrze przed zalaniem — w razie potrzeby wodę można bezpiecznie spuścić.",
+      "answer_ua": "Так, натяжна стеля затримує воду і захищає приміщення від затоплення — за потреби воду можна безпечно злити."
+    },
+    {
+      "question_pl": "Czy na suficie napinanym osiada kurz?",
+      "question_ua": "Чи осідає пил на натяжній стелі?",
+      "answer_pl": "Znacznie mniej niż na tynku — gładka powierzchnia nie elektryzuje się tak jak farba, a czyszczenie ogranicza się do przetarcia wilgotną szmatką.",
+      "answer_ua": "Значно менше, ніж на штукатурці — гладка поверхня не електризується так, як фарба, а очищення зводиться до протирання вологою ганчіркою."
+    },
+    {
+      "question_pl": "Ile trwa montaż sufitu napinanego?",
+      "question_ua": "Скільки триває монтаж натяжної стелі?",
+      "answer_pl": "Montaż jednego pomieszczenia trwa zwykle kilka godzin, a standardowe mieszkanie da się wykończyć w jeden dzień roboczy.",
+      "answer_ua": "Монтаж одного приміщення зазвичай триває кілька годин, а стандартну квартиру можна завершити за один робочий день."
+    },
+    {
+      "question_pl": "Jaka jest gwarancja na sufity napinane?",
+      "question_ua": "Яка гарантія на натяжні стелі?",
+      "answer_pl": "Udzielamy gwarancji na ponad 15 lat na certyfikowane płótno oraz wykonany montaż.",
+      "answer_ua": "Надаємо гарантію понад 15 років на сертифіковане полотно та виконаний монтаж."
+    },
+    {
+      "question_pl": "Jakie rodzaje sufitów napinanych oferujecie?",
+      "question_ua": "Які види натяжних стель ви пропонуєте?",
+      "answer_pl": "Matowe, błyszczące, satynowe, półprzezroczyste, perłowe, z nadrukiem, perforowane, gwieździste niebo oraz Double Vision.",
+      "answer_ua": "Матові, глянцеві, сатинові, напівпрозорі, перлові, з фотодруком, перфоровані, зоряне небо та Double Vision."
+    }
+  ]
+}

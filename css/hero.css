@@ -1,0 +1,200 @@
+/* ==========================================================================
+   Block 2 — Hero
+   Full-bleed photo behind everything, a dedicated diagonal scrim layer
+   for the dark-to-transparent blend (matches client reference), and a
+   content panel sitting on top. Decoupling the scrim from the image box
+   keeps the blend consistent regardless of image crop/negative margins.
+   ========================================================================== */
+
+.hero {
+  position: relative;
+  min-height: 78vh;
+  background: var(--color-ink);
+  color: var(--color-text-inverse);
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+}
+
+.hero__media {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero__slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.8s ease-in-out;
+}
+.hero__slide.is-active { opacity: 1; z-index: 1; }
+
+.hero__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: hero-kenburns 20s ease-in-out infinite;
+}
+
+@keyframes hero-kenburns {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__slide img { animation: none; }
+  .hero__slide { transition: none; }
+}
+
+.hero__scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(
+    100deg,
+    var(--color-ink) 0%,
+    var(--color-ink) 46%,
+    rgba(21,21,19,0.92) 54%,
+    rgba(21,21,19,0.6) 62%,
+    rgba(21,21,19,0.2) 70%,
+    transparent 78%
+  );
+}
+
+.hero__panel {
+  position: relative;
+  z-index: 3;
+  flex: 0 0 62%;
+  max-width: 780px;
+  display: flex;
+  align-items: center;
+  padding: calc(76px + var(--space-xl)) var(--space-xl) var(--space-xl) var(--container-pad);
+}
+
+.hero__content {
+  max-width: 700px;
+}
+
+.hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.06em;
+  color: var(--color-accent-soft);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+}
+.hero__eyebrow::before {
+  content: '';
+  width: 18px; height: 1px;
+  background: var(--color-accent-soft);
+}
+
+.hero h1 {
+  color: var(--color-white);
+}
+
+.hero__lead {
+  margin-top: var(--space-md);
+  font-size: var(--fs-lead);
+  color: var(--color-text-inverse-muted);
+  line-height: var(--lh-body);
+}
+
+/* Inline lead form */
+.hero__form {
+  margin-top: var(--space-lg);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  align-items: flex-end;
+}
+.hero__form .field {
+  margin-bottom: 0;
+  flex: 1 1 150px;
+}
+.hero__form .field span { color: var(--color-text-inverse-muted); }
+.hero__form .field input {
+  background: rgba(246,245,243,0.06);
+  border-color: var(--color-border-dark);
+  color: var(--color-text-inverse);
+}
+.hero__form .field input::placeholder { color: var(--color-text-inverse-muted); }
+.hero__form .field input:focus { border-color: var(--color-accent); background: rgba(246,245,243,0.1); }
+
+.hero__form .btn {
+  flex: 0 0 auto;
+  height: 48px;
+  white-space: nowrap;
+}
+
+.hero__microtext {
+  margin-top: var(--space-sm);
+  font-size: var(--fs-micro);
+  color: var(--color-text-inverse-muted);
+}
+.hero__microtext strong { color: var(--color-accent-soft); font-weight: 600; }
+
+.hero__form-status {
+  margin-top: var(--space-sm);
+  font-size: var(--fs-small);
+  color: var(--color-accent-soft);
+  font-weight: 600;
+}
+
+/* Trust badges row */
+.hero__badges {
+  margin-top: var(--space-xl);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md) var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border-dark);
+}
+
+.hero__badge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--fs-small);
+  font-weight: 500;
+  color: var(--color-text-inverse-muted);
+}
+.hero__badge svg {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  stroke: var(--color-accent);
+}
+
+@media (max-width: 1080px) {
+  .hero__panel { flex-basis: 70%; }
+  .hero__scrim {
+    background: linear-gradient(
+      100deg,
+      var(--color-ink) 0%,
+      var(--color-ink) 54%,
+      rgba(21,21,19,0.92) 62%,
+      rgba(21,21,19,0.55) 72%,
+      transparent 86%
+    );
+  }
+}
+
+@media (max-width: 720px) {
+  .hero { display: block; min-height: 92vh; }
+  .hero__panel {
+    flex-basis: auto;
+    max-width: none;
+    display: block;
+    padding: calc(76px + var(--space-lg)) var(--container-pad) var(--space-xl);
+  }
+  .hero__scrim {
+    background: linear-gradient(180deg, rgba(21,21,19,0.5) 0%, var(--color-ink) 72%);
+  }
+  .hero__media img { object-position: 74% 25%; }
+  .hero__form .field { flex-basis: 100%; }
+}

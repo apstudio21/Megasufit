@@ -15,6 +15,7 @@
 }
 
 .process__steps::before {
+  content: '';
   display: none;
 }
 
@@ -91,12 +92,14 @@
   }
   .process__steps::before {
     display: block;
+    position: absolute;
     top: 22px;
     bottom: 22px;
     left: 22px;
     right: auto;
     width: 1px;
     height: auto;
+    background: var(--color-border);
   }
   .process__step {
     display: grid;
